@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+    <!-- Добавление дополнительного статического CSS файла -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+	<title>Личный кабинет</title>
+</head>
+<body>
+<!--header-->
+	<header>
+		<div class="mid_centrovka">
+		<img src={% static 'img/manager.svg' %}>
+		<a href="{{ 'cabinet/' }}">Личный кабинет<br>вход/выход</a>
+		</div>
+	</header>
+	<div class="mid_centrovka">
+		<ul class="header">
+		   <li><a href="{{ '#' }}"> Главная</a></li>
+		   <li><a href="{% url "catalog" %}">Каталог</a></li>
+		   <li><a href="{{ 'projects/' }}">Проекты</a></li>
+		   <li><a href="#">Мероприятия</a></li>
+		   <li><a href="#">Организаторы</a></li>
+	  	</ul>
+	 </div>
+<!--header-->
+<!--mid_1-->
+	<div class="mid_centrovka">
+	<div class="mid_centrovka_lichniy_kabinet">
+	<div class="mid_centrovka_lichniy_kabinet_menu">
+		<ul>
+			<li><a href="#">Общая информация</a></li>
+			<li><a href="#">Личные настройки</a></li>
+			<li><a href="#">Уведомления и система связи</a></li>
+			<li><a href="#">Восстановление пароля</a></li>
+		</ul>
+	</div>
+	<div class="mid_centrovka_lichniy_kabinet_text">
+		<p class="mid_centrovka_lichniy_kabinet_text_zagolovok">Общая информация</p>
+		<p>Организация<textarea rows="1" cols="25" name="text"></textarea></p>
+		<p>Тематика услуг/товаров<textarea rows="1" cols="25" name="text"></textarea></p>
+		<p>Контактное лицо<textarea rows="1" cols="25" name="text"></textarea></p>
+		<p>Номер телефона<textarea rows="1" cols="25" name="text"></textarea></p>
+		<p>Email<textarea rows="1" cols="25" name="text"></textarea></p>
+		<p>Адрес организации<textarea rows="1" cols="25" name="text"></textarea></p>
+	</div>
+	</div>
+	</div>
+<!--mid_1-->
+<!--footer-->
+	<div class="mid_centrovka">
+		<footer>
+			<div class="mid_centrovka_footer">
+				<div class="mid_centrovka_footer_block">
+					<p>Информация о организации, создающая этот сайт, контакты, возможно ссылки на НПА</p>
+					<p>Email<textarea rows="1" cols="25" name="text"></textarea></p>
+				</div>
+				<div class="mid_centrovka_footer_block">
+					<ul>
+						<li><a href="#">О нас</a></li>
+						<li><a href="#">Мероприятия</a></li>
+						<li><a href="#">Проекты</a></li>
+						<li><a href="#">Организаторы</a></li>
+						<li><a href="#">Участники</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="mid_centrovka_3_gradient">2018 Название сайта</div>
+		</footer>
+	</div>
+<!--footer-->
+</body>
+</html>
+
+<!---->

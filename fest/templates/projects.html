@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+    <!-- Добавление дополнительного статического CSS файла -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+	<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+	<title>Проекты</title>
+</head>
+<body>
+<!--header-->
+	<header>
+		<div class="mid_centrovka">
+		<img src={% static 'img/manager.svg' %}>
+		<a href="#">Личный кабинет<br>вход/выход</a>
+		</div>
+	</header>
+	<div class="mid_centrovka">
+		<ul class="header">
+		   <li><a href="#"> Главная</a></li>
+		   <li><a href="#">Каталог</a></li>
+		   <li><a href="#">Проекты</a></li>
+		   <li><a href="#">Мероприятия</a></li>
+		   <li><a href="#">Организаторы</a></li>
+	  	</ul>
+	 </div>
+<!--header-->
+<!--mid_1-->
+	<div class="mid_centrovka">
+		<h1>Проекты</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.</p>
+	</div>
+<!--mid_1-->
+<!--mid_2-->
+	<div class="mid_centrovka">
+		<div class="proects_mid_centrovka">
+			<ul>
+				<li><a href="#"><img src={% static 'img/mid_1.jpg' %}>Елочные игрушки</a></li>
+				<li><a href="#"><img src={% static 'img/u25.jpg' %}>Гончарная мастерская</a></li>
+				<li><a href="#"><img src={% static 'img/u26.jpg' %}>Керамическая посуда</a></li>
+				<li><a href="#"><img src={% static 'img/u244.jpg' %}>Сладости в радость</a></li>
+			</ul>
+		</div>
+	</div>
+<!--mid_2-->
+<!--footer-->
+	<div class="mid_centrovka">
+		<footer>
+			<div class="mid_centrovka_footer">
+				<div class="mid_centrovka_footer_block">
+					<p>Информация о организации, создающая этот сайт, контакты, возможно ссылки на НПА</p>
+					<p>Email<textarea rows="1" cols="25" name="text"></textarea></p>
+				</div>
+				<div class="mid_centrovka_footer_block">
+					<ul>
+						<li><a href="#">О нас</a></li>
+						<li><a href="#">Мероприятия</a></li>
+						<li><a href="#">Проекты</a></li>
+						<li><a href="#">Организаторы</a></li>
+						<li><a href="#">Участники</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="mid_centrovka_3_gradient">2018 Название сайта</div>
+		</footer>
+	</div>
+<!--footer-->
+</body>
+</html>
+
+<!---->
