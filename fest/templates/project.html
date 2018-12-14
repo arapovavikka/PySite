@@ -18,12 +18,12 @@
     <div class="container">
 
       <div class="row row justify-content-end">
-        <a href="#" class="btn btn-secondary mr-4">Вход в личный кабинет</a>
+        <a href="{% url "signin" %}" class="btn btn-secondary mr-4">Вход в личный кабинет</a>
       </div>
       <div class="btn-group header-menu">
-        <a href="#" class="btn btn-secondary">Главная</a>
-        <a href="#" class="btn btn-secondary">Каталог</a>
-        <a href="#" class="btn btn-secondary">Проекты</a>
+        <a href="{% url "home" %}" class="btn btn-secondary">Главная</a>
+        <a href="{% url "catalog" %}" class="btn btn-secondary">Каталог</a>
+        <a href="{% url "projects" %}" class="btn btn-secondary">Проекты</a>
         <a href="#" class="btn btn-secondary">Мероприятия</a>
         <a href="#" class="btn btn-secondary">Организаторы</a>
       </div>
