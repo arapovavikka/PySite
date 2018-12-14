@@ -2,6 +2,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.views.generic import View
+from .models import Post
 
 
 def homePageView(request):
@@ -10,9 +11,11 @@ def homePageView(request):
 def index(request):
     # Отрисовка HTML-шаблона index.html с данными внутри 
     # переменной контекста context
+    posts = Post.objects.all()
     return render(
         request,
-        'index.html'
+        'index.html',
+        {'posts': posts}
     )
 
 def cabinet(request):
@@ -39,25 +42,13 @@ def projects(request):
         'projects.html'
     )
 
-class catalog(View):
+def catalog(request):
     # Отрисовка HTML-шаблона index.html с данными внутри 
     # переменной контекста context
     #template_name = 'catalog.html'
+    return render(request, 'catalog.html')
 
-    
-        def get(self, request, *args, **kwargs):
-      	    return render(request, 'catalog.html')
-
-        def get_success_url(self):
-	        return reverse('catalog')
-
-class signin(View):
-
-        def get(self, request, *args, **kwargs):
-      	    return render(request, 'signin.html')
-
-        def get_success_url(self):
-	        return reverse('signin')
-
+def signin(request):
+    return render(request, 'signin.html')
 
 

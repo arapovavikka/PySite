@@ -57,12 +57,10 @@
           </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
         <p class="text-white bg-dark text-center p-2">Ближайшие мероприятия в Санкт-Петербурге</p>
-        <div class="list-group">
-          <a href="#" class="list-group-item list-group-item-action">Новость</a>
-          <a href="#" class="list-group-item list-group-item-action">Новость</a>
-          <a href="#" class="list-group-item list-group-item-action">Новость</a>
-          <a href="#" class="list-group-item list-group-item-action">Новость</a>
-          <a href="#" class="list-group-item list-group-item-action">Новость</a>
+         <div class="list-group">
+          {% for post in posts %}
+            <a href="#" class="list-group-item list-group-item-action">{{post.title}}</a>
+          {% endfor %}
         </div>
         <footer class="container">
           <div class="row text-center bg-dark">

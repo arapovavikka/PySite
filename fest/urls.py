@@ -4,9 +4,9 @@ from .views import homePageView, index, cabinet, project, projects, catalog, sig
 
 urlpatterns = [
     url(r'^cabinet/', cabinet, name='cabinet'),
-    url(r'^catalog/', catalog.as_view(), name='catalog'),
+    url(r'^catalog/', catalog, name='catalog'),
     url(r'^project/test', project, name='project'),
-    url(r'^signin/', signin.as_view(), name='signin'),
+    url(r'^signin/', signin, name='signin'),
     url(r'^projects/', projects, name='projects'),
     url(r'^', index, name='home'),
 ]
