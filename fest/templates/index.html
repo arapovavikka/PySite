@@ -4,11 +4,10 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-
+   
      <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    
+  
     <!-- Bootstrap CSS -->
     {% load static %}
     
@@ -57,11 +56,28 @@
           </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
         <p class="text-white bg-dark text-center p-2">Ближайшие мероприятия в Санкт-Петербурге</p>
-         <div class="list-group">
-          {% for post in posts %}
-            <a href="#" class="list-group-item list-group-item-action">{{post.title}}</a>
-          {% endfor %}
-        </div>
+         
+        
+            <div id="accordion">
+            {% for post in posts %}
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapse{{post.id}}" aria-expanded="true" aria-controls="collapse{{post.id}}">
+                    {{post.title}}
+                  </button>
+                </h5>
+              </div>
+              <div id="collapse{{post.id}}" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                  {{post.text}}
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+
+         
         <footer class="container">
           <div class="row text-center bg-dark">
             <div class="col-6 col-md">
