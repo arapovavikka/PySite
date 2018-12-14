@@ -51,4 +51,13 @@ class catalog(View):
         def get_success_url(self):
 	        return reverse('catalog')
 
+class signin(View):
+
+        def get(self, request, *args, **kwargs):
+      	    return render(request, 'signin.html')
+
+        def get_success_url(self):
+	        return reverse('signin')
+
+
 

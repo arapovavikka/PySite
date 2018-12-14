@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-show-password/1.0.3/bootstrap-show-password.min.js"></script>
+
+    {% load static %}
+    
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+
+    <title>Проект</title>
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="row row justify-content-end">
+        <a href="#" class="btn btn-secondary mr-4">Вход в личный кабинет</a>
+      </div>
+      <div class="btn-group header-menu">
+        <a href="#" class="btn btn-secondary">Главная</a>
+        <a href="#" class="btn btn-secondary">Каталог</a>
+        <a href="#" class="btn btn-secondary">Проекты</a>
+        <a href="#" class="btn btn-secondary">Мероприятия</a>
+        <a href="#" class="btn btn-secondary">Организаторы</a>
+      </div>
+   </div>
+
+    <div class="container col-md-3">
+	    <form>
+            <div class="form-group">
+                <label>Email:</label>
+                <input type="text" name="email" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Password:</label>
+                <input type="password" id="password" name="password" class="form-control" data-toggle="password">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-success">Submit</button>
+            </div>
+	    </form>
+    </div>
+
+    <footer class="container">
+        <div class="row text-center bg-dark">
+            <div class="col-6 col-md">
+              <h5 class=" text-muted">Контакты</h5>
+              <ul class="list-unstyled text-small">
+                <li class=" text-light">Информация о организации, создающая этот сайт, контакты, возможно ссылки на НПА</li>
+              </ul>
+            </div>
+            <div class="col-6 col-md">
+              <h5 class=" text-muted">Название компании</h5>
+              <ul class="list-unstyled text-small">
+                <li class=" text-light">ООО pro100</li>
+              </ul>
+            </div>
+            <div class="col-6 col-md">
+              <h5 class=" text-muted">Страницы</h5>
+              <ul class="list-unstyled text-small ">
+                <li><a class="text-light" href="#">О нас</a></li>
+                <li><a class="text-light" href="#">Мероприятия</a></li>
+                <li><a class="text-light" href="#">Проекты</a></li>
+                <li><a class="text-light" href="#">Организаторы</a></li>
+                <li><a class="text-light" href="#">Участники</a></li>
+              </ul>
+            </div>
+    </footer>
+
+    <script type="text/javascript">
+	    $("#password").password('toggle');
+    </script>
+
+  </body>
+</html>
