@@ -11,11 +11,11 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-show-password/1.0.3/bootstrap-show-password.min.js"></script>
-
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     {% load static %}
     
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-
+    <script type="text/javascript" src="{% static 'js/bootstrap-show-password.js' %}"></script>
 
     <title>Проект</title>
   </head>
@@ -41,9 +41,15 @@
                 <input type="text" name="email" class="form-control">
             </div>
             <div class="form-group">
-                <label>Password:</label>
-                <input type="password" id="password" name="password" class="form-control" data-toggle="password">
-            </div>
+                <label for="user_password">Password:</label>
+                
+            
+	              <input type="password" name="password" id="password" class="form-control" data-toggle="password">
+	                <div class="input-group-append">
+                    
+	                </div>
+	              </div>
+
             <div class="form-group">
                 <button class="btn btn-success">Submit</button>
             </div>
@@ -75,10 +81,6 @@
               </ul>
             </div>
     </footer>
-
-    <script type="text/javascript">
-	    $("#password").password('toggle');
-    </script>
 
   </body>
 </html>
