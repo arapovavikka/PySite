@@ -53,7 +53,7 @@ class Craftsman(models.Model):
         self.save()
 
     def __str__(self):
-        return self.bio
+        return self.user_id
 
 class Country(models.Model):
     name = models.CharField(max_length=50)
@@ -62,7 +62,7 @@ class Country(models.Model):
         self.save()
 
     def __str__(self):
-        return self.bio
+        return self.name
 
 class City(models.Model):
     name = models.CharField(max_length=50)
@@ -72,4 +72,4 @@ class City(models.Model):
         self.save()
 
     def __str__(self):
-        return self.bio
+        return self.name
