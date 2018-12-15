@@ -59,3 +59,6 @@ def reg_org(request):
 
 def reg_user(request):
     return render(request, 'reg_user.html')
+
+def signin2(request):
+    return render(request, 'signin2.html')
