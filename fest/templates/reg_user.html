@@ -10,7 +10,7 @@
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
-    <title>Форма регистрации организатора</title>
+    <title>Форма регистрации участника</title>
   </head>
   <body>
     <div class="container">
@@ -41,21 +41,9 @@
                 <input type="email" class="form-control" id="email" placeholder="обязательно">
               </div>
             </div>
-            <div class="form-group">
-              <label class="control-label col-sm-5" for="email">Телефон контактного лица</label>
-              <div class="col-sm-10">
-                <input type="email" class="form-control" id="email" placeholder="обязательно">
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-sm-5" for="email">Наименование организации</label>
-              <div class="col-sm-10">
-                <input type="email" class="form-control" id="email" placeholder="обязательно">
-              </div>
-            </div>
             <div class="d-flex">
             <div class="form-group w-50">
-              <label class="control-label col-sm-5" for="email">О компании</label>
+              <label class="control-label col-sm-5" for="email">О проекте/услуге/товаре</label>
               <div class="col-sm-10">
                 <input type="email" class="form-control" id="email" placeholder="обязательно">
               </div>
@@ -70,7 +58,7 @@
               </div>
             </div>
             <div class="form-group">
-              <label class="control-label col-sm-5" for="email">Основной номер телефона компании</label>
+              <label class="control-label col-sm-5" for="email">Номер телефона</label>
               <div class="col-sm-10">
                 <input type="email" class="form-control" id="email" placeholder="обязательно">
               </div>
@@ -119,7 +107,7 @@
             <div class="col-6 col-md">
               <h5 class=" text-muted">Страницы</h5>
               <ul class="list-unstyled text-small ">
-                <li><a class="text-light" href="{% url "about" %}">О нас</a></li>
+                <li><a class="text-light" href="#">О нас</a></li>
                 <li><a class="text-light" href="#">Мероприятия</a></li>
                 <li><a class="text-light" href="#">Проекты</a></li>
                 <li><a class="text-light" href="#">Организаторы</a></li>

@@ -57,3 +57,5 @@ def about(request):
 def reg_org(request):
     return render(request, 'reg_org.html')
 
+def reg_user(request):
+    return render(request, 'reg_user.html')

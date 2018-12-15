@@ -1,7 +1,7 @@
 # pages/urls.py
 from django.conf.urls import include, url
 from .views import homePageView, index, cabinet, project, projects, catalog, signin, about
-from .views import reg_org
+from .views import reg_org, reg_user
 
 urlpatterns = [
     url(r'^cabinet/', cabinet, name='cabinet'),
@@ -11,5 +11,6 @@ urlpatterns = [
     url(r'^projects/', projects, name='projects'),
     url(r'^about/', about, name='about'),
     url(r'^reg_org/', reg_org, name='reg_org'),
+    url(r'^reg_user/', reg_user, name='reg_user'),
     url(r'^', index, name='home'),
 ]

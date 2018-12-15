@@ -33,8 +33,8 @@
     <img src="{% static 'img/mid_1.jpg' %}" class="img-fluid" alt="Responsive image" width="1100">
     <div class=" bg-dark btn-secondary position-relative" style="left:700px; top:-550px; width:350px; height: 150px;">
       <p class="mb-0">Зарегестрироваться</p><br>
-      <a href="#" class="btn btn-secondary w-75 mb-3">Как организатор</a><br>
-      <a href="#" class="btn btn-secondary w-75 mb-3">Как участник-арендатор</a>
+      <a href="{% url "reg_org" %}" class="btn btn-secondary w-75 mb-3">Как организатор</a><br>
+      <a href="{% url "reg_user" %}" class="btn btn-secondary w-75 mb-3">Как участник-арендатор</a>
     </div>
     </div>
     <div class="container marketing" style="margin-top:-120px;">
@@ -43,20 +43,21 @@
         <div class="row text-center">
           <div class="col-lg-4">
             <img class="rounded-circle" src="{% static 'img/u26.jpg' %}" alt="Generic placeholder image" width="140" height="140">
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+            <h2>История керамики из "первых рук"</h2>
+            <p>Возможно, вы когда-нибудь слышали про Федоровскую керамику? Это старинный гончарный промысел в Тамбовской области, который прекратил свою работу в 90е годы. Но так случилось, что мы смогли разыскать «последнего из магикан» — бабушку-гончара, которая до сих пор ...</p>
             <p><a class="btn btn-secondary" href="#" role="button">Подробнее &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
             <img class="rounded-circle" src="{% static 'img/u25.jpg' %}" alt="Generic placeholder image" width="140" height="140">
-            <h2>Heading</h2>
-            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+            <h2>Новогодние украшения</h2>
+            <p>Фабрика «Елочка» - еще одна из самых старинных фабрик по производству елочных украшений в нашей стране. Клинский район Московской области, где сегодня располагается фабрика, называют одним из главных центров изготовления елочных игрушек в стране. </p>
             <p><a class="btn btn-secondary" href="#" role="button">Подробнее &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
             <img class="rounded-circle" src="{% static 'img/u27.jpg' %}" alt="Generic placeholder image" width="140" height="140">
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum</p>
+            <h2>Лучшие мастера страны</h2>
+            <p>Познакомьтесь с самыми интересными мастерами и их проектами, различными видами творчества и необычными подарками. Найдите что-нибудь для себя и своих близких!
+Узнайте как создавались необычные новогодние украшения и какая техника использовалась.</p>
             <p><a class="btn btn-secondary" href="#" role="button">Подробнее &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
