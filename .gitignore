@@ -124,5 +124,6 @@ __pycache__
 myvenv
 db.sqlite3
 /static
-fest/static
+fest/static/js
+fest/static/css
 .DS_Store

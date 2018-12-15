@@ -51,4 +51,9 @@ def catalog(request):
 def signin(request):
     return render(request, 'signin.html')
 
+def about(request):
+    return render(request, 'about.html')
+
+def reg_org(request):
+    return render(request, 'reg_org.html')
 

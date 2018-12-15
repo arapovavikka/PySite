@@ -8,11 +8,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     {% load static %}
-    
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-
-
-    <title>Каталог</title>
+    <title>О нас</title>
   </head>
   <body>
     <div class="container">
@@ -28,35 +25,30 @@
         <a href="#" class="btn btn-secondary">Организаторы</a>
       </div>
    </div>
-        <div class="container text-center">
-          <h1>Каталог</h1>
-          <p>В данном разделе содержится краткая информация о проводимых в ближайшее время мероприятиях и проектах, участвующих в данных мероприятиях в городе Санкт-Петербург. В переди долгожданная пора новогодней атмосферы, большого количества самых красивых подарков для близких и родных.</p>
-        <!-- Three columns of text below the carousel -->
-        <div class="row text-center d-flex justify-content-around">
-          <div class="col-lg-4 mt-4">
-            <img class="rounded" src="{% static 'img/u243.jpg' %}" alt="Generic placeholder image" width="350" height="300">
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">Подробнее &raquo;</a></p>
-          </div><!-- /.col-lg-4 -->
-          <div class="col-lg-4 mt-4">
-            <img class="rounded" src="{% static 'img/u244.jpg' %}" alt="Generic placeholder image" width="350" height="300">
-            <h2>Heading</h2>
-            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">Подробнее &raquo;</a></p>
-          </div><!-- /.col-lg-4 -->
-           </div>
-        </div><!-- /.row -->
-        <div class="container">
-
-        <p class="text-white bg-dark text-center p-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.Б</p>
-        <div class="list-group">
-          <a href="#" class="list-group-item list-group-item-action">Новость</a>
-          <a href="#" class="list-group-item list-group-item-action">Новость</a>
-          <a href="#" class="list-group-item list-group-item-action">Новость</a>
-          <a href="#" class="list-group-item list-group-item-action">Новость</a>
-          <a href="#" class="list-group-item list-group-item-action">Новость</a>
+   <div class="container">
+    <div class="row featurette m-4">
+          <div class="col-md-5 order-md-2">
+            <h2 class="featurette-heading text-center">Как же зародился данный проект?</h2>
+            <p class="lead">Насмотревшись на отсутсвие грамотной организации мероприятий, осуществление всего процесса через стандартные социальные сети и мессенджеры, было принято решение создать уникальную площадку в сети Интернет, которая смогла бы объеденить как лиц, желающих организовать различные мероприятия, так и потенциальных участников-арендаторов, которые смогут представить свои проекты/товары/услуги на ярмарках, фестивалях и других всевозможных мероприятиях различного уровня и масштаба.</p>
+          </div>
+          <div class="col-md-7 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" src="{% static 'img/1213u573.jpg' %}" alt="Generic placeholder image">
+          </div>
         </div>
+
+        <div class="row featurette m-4">
+          <div class="col-md-7 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" src="{% static 'img/u574.jpg' %}" alt="Generic placeholder image">
+          </div>
+          <div class="col-md-5 order-md-2">
+            <h2 class="featurette-heading text-center">Данный сайт имеет следующий функционал:</h2>
+            <p class="lead">- возможность регистрации на мероприятия;<br>
+              - возможность создания новых мероприятий;
+              - личный кабинет с возможностью общения с потенциальными участниками-арендаторами и с другой стороны с организаторами мероприятий;
+              - общая информация о всех ближайших мероприятиях в городе;</p>
+          </div>
+        </div>
+      </div>
         <footer class="container">
           <div class="row text-center bg-dark">
             <div class="col-6 col-md">
